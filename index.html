@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leons Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0318b77fa3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Leon</span> Mlinaric <br> Tillberg from Sweden</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/user.png" alt="Me">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum commodi! Modi officia,
+                        soluta quas nemo quia aperiam, ipsam ipsum reprehenderit facere libero et suscipit corrupti!
+                        Repudiandae eaque provident laborum eum doloribus, molestiae ducimus eius sunt porro doloremque?
+                        Enim, molestias.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br> Web app development</li>
+                            <li><span>App Development</span> <br> Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span> <br> UX/UI Design Training at ET Institute</li>
+                            <li><span>2019 -2021</span> <br> Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span> <br> UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span> <br> Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span> <br> UX/UI Design Training at ET Institute.</li>
+                            <li><span>2016</span> <br> MBA from MIT Bangalore.</li>
+                            <li><span>2014</span> <br> BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
+                        eveniet expedita omnis perferendis quidem consectetur quisquam?
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
+                        eveniet expedita omnis perferendis quidem consectetur quisquam?
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
+                        eveniet expedita omnis perferendis quidem consectetur quisquam?
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png" alt="project1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>App that connects you to talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/images/work-2.png" alt="project2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>App that connects you to talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/images/work-3.png" alt="project3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>App that connects you to talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> real.leontm@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +46 73 376 71 15</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/leon-tillberg-mlinaric-93b774252/">
+                            <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/LeonTillberg"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="/images/Leon CV, IT.docx.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name:" required>
+                        <input type="email" name="Email" placeholder="Your Email:" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message:"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="copyright">
+            <p>&copy 2023 Leon M. Tillberg</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
