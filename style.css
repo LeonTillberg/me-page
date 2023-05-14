@@ -307,10 +307,6 @@ nav .fas{
 }
 
 /* Contact: */
-/* #contact{
-    background-color: black;
-} */
-
 .contact-left{
     flex-basis: 35%;
 }
@@ -375,6 +371,7 @@ form .btn2{
     cursor: pointer;
 }
 
+/* Footer: */
 .copyright{
     width: 100%;
     text-align: center;
@@ -382,6 +379,41 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #eee;
+    top: -2rem;
+    right: 3rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.up i {
+    color: #ff004f;
+    font-size: 2rem;
+    margin: auto;
+}
+
+/* Animation: */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+
+    70% {
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
 }
 
 /* Media queries: */

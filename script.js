@@ -16,10 +16,17 @@ function opentab(tabname) {
 
 const sidemenu = document.getElementById('sidemenu');
 
-function openmenu(){
+function openmenu() {
     sidemenu.style.right = '0';
 }
 
-function closemenu(){
+function closemenu() {
     sidemenu.style.right = '-200px';
 }
+
+//Press button to come to the top of the page:
+$('#up').on('click', function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 2000);
+});
