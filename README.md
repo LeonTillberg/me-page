@@ -1,5 +1,5 @@
 # me-page
 
 To-DO:
-- Byta ut bilder.
-- Byta ut logo.
+- Byta ut porträtt bilder.
+- Skapa fler projekt att länka till.
