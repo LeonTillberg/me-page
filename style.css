@@ -160,10 +160,7 @@ nav .fas{
 
 .tab-contents{
     display: none;
-
-
 }
-
 
 .tab-contents.active-tab{
     display: block;
@@ -172,6 +169,63 @@ nav .fas{
 .small-title{
     font-size: 20px;
     font-weight: 600;
+}
+
+.tech-stack{
+    margin-top: 60px;
+    max-width: 50rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 2rem;
+}
+
+.tech-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tech-stack-item i{
+    font-size: 3rem;
+    opacity: .5;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.tech-stack-item::before,
+.tech-stack-item::after{
+    position: absolute;
+    top: -1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+.tech-stack-item::before{
+    content: '';
+    border: 1rem solid transparent;
+    border-top-color: var(--dark-color);
+    transform: translateY(0);
+    z-index: 5;
+}
+
+.tech-stack-item::after{
+    content: attr(data-tooltip);
+    width: max-content;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
+
+.tech-stack-item:hover::before{
+    opacity: 1;
+    transform: translateY(-.6rem);
+}
+
+.tech-stack-item:hover::after{
+    opacity: 1;
+    transform: translateY(calc(-100% + -.5rem));
 }
 
 /* Services: */
