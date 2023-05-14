@@ -159,7 +159,10 @@ nav .fas{
 
 .tab-contents{
     display: none;
+
+
 }
+
 
 .tab-contents.active-tab{
     display: block;

@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leons Site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/0318b77fa3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/images/user.png" alt="Me">
+                    <img src="/images/user.png" alt="Me" data-aos="fade-right" data-aos-delay="300">
                 </div>
 
                 <div class="about-col-2">
@@ -129,7 +132,7 @@
         <div class="container">
             <h1 class="sub-title">Mina Tjänster</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="fade-right" data-aos-delay="300">
                     <i class="fas fa-code"></i>
                     <h2>Webb Design</h2>
                     <p> Webb designer som är skicklig i HTML, CSS och JavaScript, med en känsla för detaljer och en
@@ -141,7 +144,7 @@
                     <a href="#contact">Intresserad? Slå mig en signal!</a>
                 </div>
 
-                <div>
+                <div data-aos="fade-left" data-aos-delay="300">
                     <i class="fas fa-crop-alt"></i>
                     <h2>Webb Utveckling</h2>
                     <p> Erfaren webbutvecklare som är skicklig i HTML, CSS och JavaScript, med fokus på att skapa robusta
@@ -153,15 +156,6 @@
                     </p>
                     <a href="#contact">Intresserad? Slå mig en signal!</a>
                 </div>
-
-                <!-- <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
-                        eveniet expedita omnis perferendis quidem consectetur quisquam?
-                    </p>
-                    <a href="#">Se Mer</a>
-                </div> -->
             </div>
         </div>
     </div>
@@ -171,7 +165,7 @@
         <div class="container">
             <h1 class="sub-title">Tidigare Projekt</h1>
             <div class="work-list">
-                <div class="work">
+                <div class="work" data-aos="fade-right" data-aos-delay="300">
                     <img src="/images/work-1.png" alt="project1">
                     <div class="layer">
                         <h3>Social Media App</h3>
@@ -180,7 +174,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work" data-aos="fade-right" data-aos-delay="600">
                     <img src="/images/work-2.png" alt="project2">
                     <div class="layer">
                         <h3>Music App</h3>
@@ -189,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work" data-aos="fade-right" data-aos-delay="900">
                     <img src="/images/work-3.png" alt="project3">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
@@ -220,7 +214,7 @@
                     <a href="/images/Leon CV, IT.docx.pdf" download class="btn btn2">Hämta CV</a>
                 </div>
 
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left" data-aos-delay="300">
                     <form form action="https://formsubmit.co/real.leontm@gmail.com" method="POST">
                         <input type="text" name="Name" placeholder="Namn:" required>
                         <input type="email" name="Email" placeholder="Email:" required>
@@ -239,7 +233,6 @@
             <p>&copy 2023 Leon M. Tillberg</p>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

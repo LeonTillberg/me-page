@@ -30,3 +30,10 @@ $('#up').on('click', function () {
         scrollTop: 0
     }, 2000);
 });
+
+//Animate elements to fade into the site:
+AOS.init({
+    easing: 'ease',
+    duration: 1800,
+    once: true
+});
