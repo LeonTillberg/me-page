@@ -17,17 +17,21 @@
         <div class="container">
             <nav>
                 <img src="/images/logo.png" class="logo" alt="Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Hem</a></li>
+                    <li><a href="#about">Om Mig</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Leon</span> Mlinaric <br> Tillberg from Sweden</h1>
+                <br>
+                <p>Webb Utvecklare</p>
+                <h1>Hej, jag är <span>Leon</span> <br> Mlinaric Tillberg</h1>
             </div>
         </div>
     </div>
@@ -41,41 +45,75 @@
                 </div>
 
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, rerum commodi! Modi officia,
-                        soluta quas nemo quia aperiam, ipsam ipsum reprehenderit facere libero et suscipit corrupti!
-                        Repudiandae eaque provident laborum eum doloribus, molestiae ducimus eius sunt porro doloremque?
-                        Enim, molestias.
+                    <h1 class="sub-title">Om Mig</h1>
+                    <p> Jag är en 24 år gammal bosatt i Värnhem, Malmö.
+                        Som person är jag väldigt social och utgående, älskar att lära mig nya saker, gillar att ta eget ansvar samt att lyfta upp folk runt omkring mig. <br>
+                        Mitt fascination för teknologi började som barn genom spelande, men började sedan utvecklas i mina tonår genom att jag började inse potentialen det har till att lösa verkliga problem för människor. <br>
+                        Utövar mina tekniska färdigheter har jag även arbetslivserfarenhet av att arbeta i team och kommunicera effektivt med intressenter. 
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Färdigheter</p>
+                        <p class="tab-links" onclick="opentab('experience')">Erfarenhet</p>
+                        <p class="tab-links" onclick="opentab('education')">Utbildning</p>
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-                            <li><span>Web Development</span> <br> Web app development</li>
-                            <li><span>App Development</span> <br> Building Android/iOS apps</li>
+                            <li><span class="small-title">UI/UX</span> <br> Designa Webb sidor.</li>
+                            <li><span class="small-title">Webb Utveckling</span> <br> Front-end funktionalitet för
+                                webbsidor.</li>
+                            <li>Back-end funktionalitet för webbsidor.</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span> <br> UX/UI Design Training at ET Institute</li>
-                            <li><span>2019 -2021</span> <br> Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span> <br> UI/UX Design Executive at Coin Digital Ltd.</li>
-                            <li><span>2016 - 2017</span> <br> Internship at ekart eCommerce.</li>
+                            <li class="small-title"><span>2024 - 3 månader - LIA2</span> <br> Lorem ipsum
+                                dolor sit amet.</li>
+                            <li class="small-title"><span>2023 - 3 månader - LIA1</span> <br> Praktik på
+                                FinTech företaget
+                                BetterWealth</li>
+                            <li class="small-title"><span>2019 - 2020</span><br>TalentMe (ICA-bemanningsföretag),
+                                behovsanställning</li>
+                            <li>Jobbade i kassan, med varuplockning bland kolonialvaror, i förbutik, samt med postombud
+                                (Postnord/DHL).</li>
+                            <li class="small-title"><span>2019</span><br>OKQ8 (6 månader kontrakt)</li>
+                            <li>Arbetar främst bakom kassan och med postutbudet (Postnord), med extra uppgifter såsom
+                                Städning och matlagning.
+                            </li>
+                            <li class="small-title"><span>2018</span> <br> UF-Företag</li>
+                            <li> Som UF-företagets VD tog jag initiativ och ledde projektet
+                                Som ansvarig över marknadsföring lärde jag mig använda bl.a. google adwords, och listade
+                                ut kreativa sätt att marknadsföra med väldigt begränsad ekonomi. <br>
+                                Som företagets-ekonom skapade jag en budget för företaget, såg till så att företaget
+                                höll sig till den, samt bokförde företagets ekonomiska aktivitet.
+                                </i>
+                            <li class="small-title"><span>2017</span> <br> Fältförsäljare</li>
+                            <li> Arbetsuppgifterna innebar att sälja välgörenhet genom dörrförsäljning, samt att vägleda
+                                nyanställda oerfarna försäljare.
+                                Kvalificerades för företagets “elit-grupp” inom träningsperioden och gick igenom flera
+                                interna utbildningar som förstärkte mig både i försäljning och i ledarskap.
+                            </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span> <br> UX/UI Design Training at ET Institute.</li>
-                            <li><span>2016</span> <br> MBA from MIT Bangalore.</li>
-                            <li><span>2014</span> <br> BBA from ISM Bangalore.</li>
+                            <li class="small-title"><span>2022 - 2024 - Grit Academy</span> <br> Front end
+                                webbutvecklare.</li>
+                            <li> Utbildningens kurser består specifikt utav: UX & design, agil projektledning, backend
+                                och
+                                databashantering, html & css, javascript 1/2/3 (inkl React & TypeScript),
+                                versionshantering,
+                                konsultrollen, LIA 1/2.</li>
+                            <li class="small-title"><span>2015 - 2018 - Ystad Gymnasium</span> <br> Ekonomi med
+                                inriktning på företagande.</li>
+                            <li> Utbildningen fokuserade främst på alla delar av företagande och byggde på färdigheter
+                                som: entreprenörskap, ledarskap, disciplin, marknadsföring, konsumentpsykologi och
+                                ekonomisk förståelse på både en individuell- och företagsnivå.</li>
+                            <li>Var en medlem av elevrådet där vi ansvarade för organiseringen av flera aktivitetsdagar
+                                under gymnasietiden.</li>
                         </ul>
                     </div>
                 </div>
@@ -84,37 +122,36 @@
     </div>
 
     <!-- SERVICES -->
-
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">Mina Tjänster</h1>
             <div class="services-list">
                 <div>
                     <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
+                    <h2>Webb Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
                         eveniet expedita omnis perferendis quidem consectetur quisquam?
                     </p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Se Mer</a>
                 </div>
 
                 <div>
                     <i class="fas fa-crop-alt"></i>
-                    <h2>UI/UX Design</h2>
+                    <h2>Webb Utveckling</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
                         eveniet expedita omnis perferendis quidem consectetur quisquam?
                     </p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Se Mer</a>
                 </div>
 
-                <div>
+                <!-- <div>
                     <i class="fab fa-app-store"></i>
                     <h2>App Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente, odio impedit doloremque
                         eveniet expedita omnis perferendis quidem consectetur quisquam?
                     </p>
-                    <a href="#">Learn More</a>
-                </div>
+                    <a href="#">Se Mer</a>
+                </div> -->
             </div>
         </div>
     </div>
@@ -122,13 +159,13 @@
     <!-- PORTFOLIO -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">Tidigare Projekt</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="/images/work-1.png" alt="project1">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>App that connects you to talented people around the world.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, nisi.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -137,7 +174,7 @@
                     <img src="/images/work-2.png" alt="project2">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p>App that connects you to talented people around the world.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, nisi</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -146,13 +183,13 @@
                     <img src="/images/work-3.png" alt="project3">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p>App that connects you to talented people around the world.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, nisi</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
 
-            <a href="#" class="btn">See More</a>
+            <a href="#" class="btn">Se Mer</a>
         </div>
     </div>
 
@@ -162,7 +199,7 @@
             <div class="row">
 
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title">Kontakta Mig</h1>
                     <p><i class="fas fa-paper-plane"></i> real.leontm@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i> +46 73 376 71 15</p>
                     <div class="social-icons">
@@ -170,15 +207,16 @@
                             <i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/LeonTillberg"><i class="fab fa-github"></i></a>
                     </div>
-                    <a href="/images/Leon CV, IT.docx.pdf" download class="btn btn2">Download CV</a>
+                    <a href="/images/Leon CV, IT.docx.pdf" download class="btn btn2">Hämta CV</a>
                 </div>
 
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name:" required>
-                        <input type="email" name="Email" placeholder="Your Email:" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message:"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form form action="https://formsubmit.co/real.leontm@gmail.com" method="POST">
+                        <input type="text" name="Name" placeholder="Namn:" required>
+                        <input type="email" name="Email" placeholder="Email:" required>
+                        <input type="text" name="Subject" placeholder="Ämne:">
+                        <textarea name="Message" rows="6" placeholder="Meddelande:" required></textarea>
+                        <button type="submit" class="btn btn2">Skicka!</button>
                     </form>
                 </div>
             </div>
@@ -188,8 +226,6 @@
             <p>&copy 2023 Leon M. Tillberg</p>
         </footer>
     </div>
-
-
 </body>
 
 </html>
